@@ -1,13 +1,404 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:700,900');
+
+:root {
+  --primary-color: #CC3300;
+  --secondary-color: #8B0400;
+  --terciary-color: #CC3200;
+  --four-color: #B3B3B3;
+  --five-color: #E85D04;
+  --six-color: #370617;
+  --primary-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Nunito Sans', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  background-color: #000000;
 }
+
+
+/*  HOME  */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  z-index: 4;
+}
+
+
+/*  NAVBAR  */
+
+.burgerNav {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+.logo {
+  position: absolute;
+  margin-left: .5rem;
+  padding: .5rem;
+  top: 5px;
+}
+.burgerNav h1 {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 11px;
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-left: 2rem;
+}  
+
+#toggle {
+  display: none;
+}
+
+/**    Hamburger  **/
+
+.hamburger {
+  position: fixed;
+  top: 5em;
+  right: 5%;
+  margin-left: -2em;
+  margin-top: -45px;
+  width: 2em;
+  height: 45px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.hamburger div {
+  position: relative;
+  width: 3em;
+  height: 2px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger > .meat  {
+  width: 100%;
+  left: 50%;
+}
+
+/**  Nav Styles  **/
+
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000000ef;
+  top: -100%; left: 0; right: 0; bottom: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+  z-index: 1;
+}
+.nav-wrapper {
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+nav {
+  text-align: left;
+  margin-left: 25%;
+}
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 2rem;
+  display: inline-block;
+  margin-top: 1.25em;
+  transition: color 0.2s ease-in-out;
+  letter-spacing: 1px;
+}
+nav a:before {
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 0.25em;
+  background-color: var(--terciary-color);
+  left: -0.5em;
+  transition: all 0.2s ease-in-out;
+}
+nav a:hover {
+  color: var(--terciary-color);
+}
+nav a:hover:before {
+  height: 100%;
+}
+
+/**
+Animations
+**/
+#toggle:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 25px;
+}
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+#toggle:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -4px;
+  width: 150%;
+  left: -1%;
+}
+
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
+}
+
+/*  HEADER  */
+
+.video {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 40%;
+  height: 120%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 50%;
+}
+
+.Iam {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-align: center; /* Centrar el texto horizontalmente */
+  position: absolute; /* Posición absoluta para centrar verticalmente */
+  top: 40%; /* Alinear el borde superior del elemento al 50% del contenedor principal */
+  left: 50%; /* Alinear el borde izquierdo del elemento al 50% del contenedor principal */
+  transform: translate(-50%, -50%); /* Mover el elemento hacia arriba y hacia la izquierda en un 50% de su propio tamaño */
+}
+
+.Iam > h1 {
+  background-color: linear-gradient(135deg, #f4583a 0%,#cd1e38 100%);
+  text-shadow: 0 20px 40px rgba(0,0,0,.5);
+  font-family: 'Raleway', sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* Aesthetics */
+
+.bottom-section{
+  background: #d4fef2;
+}
+.section h1{
+  font-size: 85px;
+  letter-spacing: 3px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section p,
+.section a{
+  font-weight: 800;
+  letter-spacing: 9px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content-theme-dark h1{
+  background-color: linear-gradient(135deg, #f4583a 0%,#cd1e38 100%);
+  text-shadow: 0 20px 40px rgba(0,0,0,.5);
+}
+.content-theme-dark p,
+.content-theme-dark a{
+  color: #a8a8a8;
+}
+.content-theme-light h1{
+  color:#062930;
+  text-shadow: 0 20px 40px rgba(0,0,0,.5);
+}
+.content-theme-light p,
+.content-theme-light a{
+  color: #728E93;
+}
+
+
+.mouse {
+  display: block;
+  margin: 0 auto;
+  width: 26px;
+  height: 46px;
+  border-radius: 13px;
+  border: 3px solid white;
+  position: absolute;
+  bottom: 40px;
+  position: absolute;
+  left: 51%;
+  margin-left: -26px;
+}
+.mouse > span {
+  display: block;
+  margin: 6px auto;
+  width: 2px;
+  height: 2px;
+  border-radius: 4px;
+  background: white;
+  border: 1px solid transparent;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+  animation-name: scroll;
+}
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+/*  INFO  */
+
+.info {
+ margin-top: 43rem;
+ margin-bottom: 5rem;
+}
+.info p {
+  font-size: 1.2rem;
+  width: 90%;
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+  margin: 10px 0;      
+  font-family: 'Raleway', sans-serif;
+}
+.info a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.info a:hover {
+  text-decoration: none;
+}
+.info .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+  color: white;
+  width: 150px;
+  height: 50px;
+  border: 2px solid #CC3300;
+  box-shadow: 5px 5px #CC3300;
+  transition: background-color .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out;
+}
+.info .box:hover {
+  background-color: #CC3300;
+  border: 2px solid #000000;
+  box-shadow: 5px 5px #000000;
+  transition: background-color .5s ease-in-out;
+  transition: box-shadow .5s ease-in-out;
+}
+.info span {
+  color: var(--primary-color);
+}
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem;
+  margin-top: 6rem;
+}
+
+
+/*  GALERIA  */
+
+.gallery {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-auto-flow: column;
+  place-content: center;
+  background: #425a52;
+}
+.titleGallery {
+  color: white;
+  text-align: center;
+  font-family: var(--primary-font);
+}
+
+figure {
+  display: grid;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+figure > * {
+  grid-area: 1/1;
+  transition: .4s;
+}
+figure figcaption {
+  display: grid;
+  align-items: end;
+  font-family: sans-serif;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #0000;
+  padding: .75rem;
+  background: var(--c,#0009);
+  clip-path: inset(0 var(--_i,100%) 0 0);
+  --webkit-mask:
+    linear-gradient(#fff5 0 0),
+    linear-gradient(#000 0 0);
+  --webkit-mask-composite: xor;
+  --webkit-mask-clip: text, padding-box;
+  margin: -1px;
+}
+figure:hover figcaption, p {
+  --_i: 0%;
+}
+figure:hover img {
+  transform: scale(1.2);
+}
+figure figcaption {
+   --webkit-mask: none;
+   color: #fff;
+  }
+
+
+
+/*  PAGOS  */
+/*  CONTACTO  */
+/*  FOOTER  */
+/*  ----------RESPONSIVE----------  */
+/*  RESOLUCIÓN 320px  */
