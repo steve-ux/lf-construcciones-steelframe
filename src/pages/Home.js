@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Info from "../components/Info";
 import Gallery from "../components/Galeria";
+import Contacto from "../components/Contacto";
 
 function Home() {
     return (
@@ -8,6 +9,7 @@ function Home() {
     <Header/>
     <Info/>
     <Gallery/>
+    <Contacto/>
     </div>
     );
   }
