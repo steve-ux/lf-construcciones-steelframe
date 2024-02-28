@@ -27,6 +27,18 @@ body {
   flex-direction: column;
   z-index: 4;
 }
+.whatsapp {
+  position: fixed;
+  bottom: 20px; /* Ajusta la distancia desde la parte inferior según tu preferencia */
+  right: 20px; /* Ajusta la distancia desde la derecha según tu preferencia */
+  z-index: 999; /* Asegura que esté por encima de otros elementos */
+  padding: 15px; /* Ajusta el tamaño del botón según tu preferencia */
+  border-radius: 50%; /* Hace que el botón sea circular */
+  cursor: pointer;
+}
+path:hover {
+  fill: #000000;
+}
 
 
 /*  NAVBAR  */

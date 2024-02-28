@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+.contactar {
+	font-family: "DM Sans", sans-serif;
+	line-height: 1.5;
+	background-color: #f1f3fb;
+	padding: 0 2rem;
+}
+
 img {
 	max-width: 100%;
 	display: block;
@@ -101,13 +110,16 @@ input {
 	padding: 1em;
 	width: 100%;
 	font-weight: 500;
-	background-color: #6658d3;
+	background-color: #000000;
 	border-radius: 6px;
 	color: #FFF;
 	border: 0;
 	&:focus {
 		outline: 0;
 	}
+}
+.action-button:hover {
+	background-color: #ec2929;
 }
 
 .card-info {
@@ -117,7 +129,7 @@ input {
 	color: #8597a3;
 	a {
 		display: block;
-		color: #6658d3;
+		color: #CC3300;
 		text-decoration: none;
 	}
 }
