@@ -7,9 +7,13 @@ import Country from "../assets/7.png";
 function Gallery() {
   return (
     <>
-    <h2 className="titleGallery">Algunos de nuestros clientes</h2>
     <div className="gallery">
-      <figure>
+    <div className="gallery-hijo">
+    <h2 className="titleGallery">Marcas que prefirieron <span className="resaltado">LF Construcciones</span></h2>
+    </div>
+    <div className="gallery-hijo2">
+
+    <figure>
         <img src={Cetrogar} alt="Mountains" width="230" />
         <figcaption>CETROGAR</figcaption>
       </figure>
@@ -29,6 +33,9 @@ function Gallery() {
         <img src={Country} alt="Mountains" width="230" />
         <figcaption>CAÑUELAS<br></br>GOLF COUNTRY</figcaption>
       </figure>
+
+    </div>
+      
     </div>
     </>
   );

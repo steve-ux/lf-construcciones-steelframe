@@ -3,7 +3,8 @@
 .contactar {
 	font-family: "DM Sans", sans-serif;
 	line-height: 1.5;
-	background-color: #f1f3fb;
+	background-image: url("../assets/fondo-edificios.png");
+	opacity: 90%;
 	padding: 0 2rem;
 }
 
@@ -36,9 +37,9 @@ input {
 	border-radius: 8px;
 	overflow: hidden;
 	padding-bottom: 65%;
-	background-image: url('../assets/steel_frame_2.jpeg');
+	background-image: url('../assets/img-form.png');
 	background-repeat: no-repeat;
-	background-size: 150%;
+	background-size:contain;
 	background-position: 0 5%;
 	position: relative;
 }
@@ -50,7 +51,7 @@ input {
 	right: 10%;
 	font-size: 1.75rem;
 	font-weight: 700;
-	color: #000000;
+	color: #d34c65;
 	line-height: 1.222;
 	small {
 		display: block;
@@ -91,9 +92,9 @@ input {
 	padding: .25rem 0;
 	&:focus, &:valid {
 		outline: 0;
-		border-bottom-color: #6658d3;
+		border-bottom-color: #d34c65;
 		&+.input-label {
-			color: #6658d3;
+			color: #d34c65;
 			transform: translateY(-1.5rem);
 		}
 	}
@@ -111,6 +112,7 @@ input {
 	width: 100%;
 	font-weight: 500;
 	background-color: #000000;
+	transition: background-color .5s;
 	border-radius: 6px;
 	color: #FFF;
 	border: 0;
@@ -120,6 +122,7 @@ input {
 }
 .action-button:hover {
 	background-color: #ec2929;
+	transition: background-color .5s;
 }
 
 .card-info {

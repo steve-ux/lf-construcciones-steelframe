@@ -6,7 +6,7 @@ function Contacto() {
   <div class="container">
 	<div class="card">
 		<div class="card-image">
-			<h2 class="card-heading">
+			<h2 class="card-heading"><br></br><br></br>
 				Concretamos ideas.
 				<small>Presupuesto sin cargo.</small>
 			</h2>
@@ -18,7 +18,7 @@ function Contacto() {
 			</div>
       <div class="input">
 				<input type="number" class="input-field" required/>
-				<label class="input-label">Teléfono (Con código área sin el 0 o el 15)</label>
+				<label class="input-label">Teléfono (Con código de área sin el 0 y el 15)</label>
 			</div>
 						<div class="input">
 				<input type="email" class="input-field" required/>
