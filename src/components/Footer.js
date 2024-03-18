@@ -18,6 +18,29 @@ function Footer() {
       <p>SUBIR</p>
       </div>
       </div>
+      <div className="footer-hijo">
+      <div className="footer-menu">
+      <h4>MENÚ</h4>
+      <p><a href="#Trabajos">TRABAJOS</a></p>
+      <p><a href="#Nosotros">NOSOTROS</a></p>
+      <p><a href="#Contacto">CONTACTO</a></p>
+      </div>
+      <div className="footer-menu">
+      <h4>+ INFORMACIÓN</h4>
+      <p><a>JOSÉ LUIS VALDERRAMA</a></p>
+      <p><a href="tel:3513028154" target="_blank" rel="noopener noreferrer">TELÉFONO: 3513028154</a></p>
+      <p><a>HORARIO: DE 8 A 18 HS</a></p>
+      </div>
+      <div className="footer-menu">
+      <h4>UBICACIÓN</h4>
+      <p><a href="#Grilla">ALBERDI, CÓRDOBA. ARGENTINA</a></p>
+      <p><a href="tel:3513028154" target="_blank" rel="noopener noreferrer">CONSULTAR POR TRABAJOS EN</a></p>
+      <p><a>EL RESTO DEL PAÍS</a></p>
+      </div>
+
+
+      
+      </div>
       <hr></hr>
       <footer>
           Copyright ©{" "}

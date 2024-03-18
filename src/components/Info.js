@@ -1,4 +1,6 @@
 import House from "../assets/steelframe.jpeg";
+import House2 from "../assets/steelframe2.jpeg";
+import House3 from "../assets/steelframe3.jpeg";
 
 function Info() {
     return (
@@ -6,23 +8,23 @@ function Info() {
    <div className="info">
 
 
-  <div className="description1">
+  <div className="description1" id="Nosotros">
     <div>
-    <p>En <span>LF Construcciones</span> nos dedicamos hace más de 10 años al <span>Steel Frame</span> en la ciudad de Córdoba, un sistema constructivo moderno que se basa en estructuras de acero galvanizado, en conjunto con la utilización de materiales de división, aislación, fijación y terminación.</p>
+    <p>En <span>LF Construcciones</span> nos dedicamos hace más de 10 años al <span>Steel Frame</span> en la ciudad de Córdoba, un sistema constructivo moderno que se basa en estructuras de acero galvanizado, materiales de división, aislación, fijación y terminación.</p>
 
     </div>
     <div>
-    <img class="fox" src={House} alt="Casa en steel frame" width="600"/>
+    <img class="fox" src={House} alt="Casa en steel frame, esqueleto" width="900"/>
     </div>
   </div>
 
 
   <div className="description">
     <div>
-    <img class="fox" src={House} alt="Casa en steel frame" width="600"/>
+    <img class="fox" src={House2} alt="Casa en steel frame en construcción" width="900"/>
     </div>
     <div>
-    <p>En <span>LF Construcciones</span> nos dedicamos hace más de 10 años al <span>Steel Frame</span>, un sistema constructivo moderno que se basa en estructuras de acero galvanizado, en conjunto con la utilización de materiales de división, aislación, fijación y terminación.</p>
+    <p>Una obra promedio de Steel Frame se construye en <span>45 días</span> trabajados. Esto permite congelar precios sin tener que sufrir el <span>impacto inflacionario</span>. Por otra parte, la exactitud en los cálculos estructurales reduce desperdicios y recortes. Lo que genera una obra <span>extremadamente limpia</span>.</p>
 
     </div>
   </div>
@@ -32,12 +34,12 @@ function Info() {
   <div className="description">
     <div>
     <p><br></br>
-    <br/>Además de estas ventajas, el steel frame, es de construcción rápida, durable y mucho más económico que sistemas tradicionales. <br></br>Solicitá <span>presupuesto sin cargo</span>, te aseguramos buen precio y calidad.</p>
+    <br/>Además de estas ventajas, el steel frame, es sustentable, perdurable en el tiempo y mucho más flexible que sistemas tradicionales. <br></br>Solicitá un <span>presupuesto sin cargo</span>, te aseguramos buen precio y calidad.</p>
     <p>LF Construcciones, concretamos ideas.</p>
-    <div class="box"><a href="#Contacto">Contratar</a></div>
+    <div class="box"><a href="#Contacto">CONTRATAR</a></div>
     </div>
     <div>
-    <img class="fox" src={House} alt="Casa en steel frame" width="600"/>
+    <img class="fox" src={House3} alt="Casa en steel frame terminada" width="600"/>
     </div>
   </div>
 

@@ -6,7 +6,7 @@ function Contacto() {
   <div class="container">
 	<div class="card">
 		<div class="card-image">
-			<h2 class="card-heading"><br></br><br></br>
+			<h2 class="card-heading" id="Contacto"><br></br><br></br>
 				Concretamos ideas.
 				<small>Presupuesto sin cargo.</small>
 			</h2>

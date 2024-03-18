@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import Videoloop from "../assets/background.mov";
+import Videoloop from "../assets/videoback.mov";
 import "../styles/button.scss"
 
 function Header() {
@@ -28,7 +28,7 @@ function Header() {
     <span class="circle" aria-hidden="true">
       <span class="icon arrow"></span>
     </span>
-    <span class="button-text">Saber más</span>
+    <a href="#Nosotros"><span class="button-text">Saber más</span></a>
   </button>
 </div>
 </div>

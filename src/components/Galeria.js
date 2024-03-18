@@ -3,13 +3,20 @@ import Libertad from "../assets/2.png";
 import Claro from "../assets/3.png";
 import YPF from "../assets/4.png";
 import Country from "../assets/7.png";
+import Videoback from "../assets/background.mov";
 
 function Gallery() {
   return (
     <>
     <div className="gallery">
+    <div className="video-overlay">
+    <video autoPlay muted loop className="video-background">
+          <source src={Videoback} type="video/mp4" />
+          Tu navegador no soporta el elemento de video.
+        </video>
+      </div>
     <div className="gallery-hijo">
-    <h2 className="titleGallery">Marcas que prefirieron <span className="resaltado">LF Construcciones</span></h2>
+    <h2 className="titleGallery" id="Trabajos">Marcas que prefirieron <span className="resaltado">LF Construcciones</span></h2>
     </div>
     <div className="gallery-hijo2">
 
@@ -35,7 +42,6 @@ function Gallery() {
       </figure>
 
     </div>
-      
     </div>
     </>
   );

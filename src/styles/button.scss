@@ -104,6 +104,10 @@ button {
     }
   }
 }
+.button-text a {
+  text-decoration: none;
+  color: #ffffff;
+}
 
 @supports (display: grid) {
   

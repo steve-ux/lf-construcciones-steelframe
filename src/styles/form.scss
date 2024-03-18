@@ -51,7 +51,7 @@ input {
 	right: 10%;
 	font-size: 1.75rem;
 	font-weight: 700;
-	color: #d34c65;
+	color: #60d1d1;
 	line-height: 1.222;
 	small {
 		display: block;
@@ -92,9 +92,9 @@ input {
 	padding: .25rem 0;
 	&:focus, &:valid {
 		outline: 0;
-		border-bottom-color: #d34c65;
+		border-bottom-color: #330867;
 		&+.input-label {
-			color: #d34c65;
+			color: #330867;
 			transform: translateY(-1.5rem);
 		}
 	}
@@ -107,7 +107,7 @@ input {
 .action-button {
 	font: inherit;
 	font-size: 1.25rem;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
 	padding: 1em;
 	width: 100%;
 	font-weight: 500;
@@ -121,8 +121,8 @@ input {
 	}
 }
 .action-button:hover {
-	background-color: #ec2929;
-	transition: background-color .5s;
+	background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+	transition: background-image .5s;
 }
 
 .card-info {

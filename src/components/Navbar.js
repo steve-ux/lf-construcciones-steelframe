@@ -16,8 +16,8 @@ import LF from "../assets/logo lf steel frame sin fondo 1.png";
   <div class="nav-wrapper">
     <nav>
     <a href="/">INICIO</a><br/>
-      <a href="#+Info">NOSOTROS</a><br/>
-      <a href="#Grilla">TRABAJOS</a><br/>
+      <a href="#Nosotros">NOSOTROS</a><br/>
+      <a href="#Trabajos">TRABAJOS</a><br/>
       <a href="#Contacto">CONTACTO</a><br/>
     </nav>
   </div>
