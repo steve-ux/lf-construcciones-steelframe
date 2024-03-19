@@ -344,10 +344,10 @@ Animations
   transition: box-shadow .3s ease-in-out;
 }
 .info .box:hover {
-  background-color: #330867;
+  background: #b9b9b9;
   border: 1px solid #000000;
-  box-shadow: 5px 5px #330867;
-  transition: background-color .5s ease-in-out;
+  box-shadow: 5px 5px #818181;
+  transition: background .5s ease-in-out;
   transition: box-shadow .5s ease-in-out;
 }
 .info span {
@@ -518,18 +518,27 @@ footer span {
   cursor: pointer;
 }
 .footer-menu {
-text-align: left;
+text-align: center;
+margin-bottom: 3rem;
 }
-.footer-menu A {
+.footer-menu a {
   text-decoration: none !important;
   color: #d34c65;
 }
+.footer-menu3 {
+  text-align: center;
+  margin-bottom: 3rem;
+  }
+  .footer-menu3 a {
+    text-decoration: none !important;
+    color: #d34c65;
+  }
 a {
   text-decoration: none !important;
 }
 .footer-hijo {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .footer-hijo p {
