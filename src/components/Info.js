@@ -8,7 +8,7 @@ function Info() {
    <div className="info">
 
 
-  <div className="description1" id="Nosotros">
+  <div className="description1" id="Nosotros" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1000">
     <div>
     <p>En <span>LF Construcciones</span> nos dedicamos hace más de 10 años al <span>Steel Frame</span> en la ciudad de Córdoba, un sistema constructivo moderno que se basa en estructuras de acero galvanizado, materiales de división, aislación, fijación y terminación.</p>
 
@@ -19,7 +19,7 @@ function Info() {
   </div>
 
 
-  <div className="description">
+  <div className="description" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1000">
     <div>
     <img class="fox" src={House2} alt="Casa en steel frame en construcción" width="900"/>
     </div>
@@ -31,7 +31,7 @@ function Info() {
 
 
 
-  <div className="description">
+  <div className="description" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1000">
     <div>
     <p><br></br>
     <br/>Además de estas ventajas, el steel frame, es sustentable, perdurable en el tiempo y mucho más flexible que sistemas tradicionales. <br></br>Solicitá un <span>presupuesto sin cargo</span>, te aseguramos buen precio y calidad.</p>
