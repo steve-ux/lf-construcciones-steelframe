@@ -136,3 +136,14 @@ input {
 		text-decoration: none;
 	}
 }
+@media (max-width: 320px) {
+	.card-heading {
+		font-size: 1.2rem;
+	  }
+	  .input-label {
+		color: #8597a3;
+		position: absolute;
+		top: .8rem;
+		transition: .25s ease;
+	}
+}

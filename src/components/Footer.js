@@ -15,7 +15,7 @@ function Footer() {
       </div>
       <div className="footer-menu">
       <h4>+ INFORMACIÓN</h4>
-      <p><a>JOSÉ LUIS VALDERRAMA</a></p>
+      <p><a>LUIS VALDERRAMA</a></p>
       <p><a href="tel:3513028154" target="_blank" rel="noopener noreferrer">TELÉFONO: 3513028154</a></p>
       <p><a>HORARIO: DE 8 A 18 HS</a></p>
       </div>

@@ -36,12 +36,12 @@ function Info() {
     <p><br></br>
     <br/>Además de estas ventajas, el steel frame, es sustentable, perdurable en el tiempo y mucho más flexible que sistemas tradicionales. <br></br>Solicitá un <span>presupuesto sin cargo</span>, te aseguramos buen precio y calidad.</p>
     <p>LF Construcciones, concretamos ideas.</p>
-    <div class="box"><a href="#Contacto">CONTRATAR</a></div>
     </div>
     <div>
     <img class="fox" src={House3} alt="Casa en steel frame terminada" width="600"/>
     </div>
   </div>
+    <div class="box"><a href="#Contacto">CONTRATAR</a></div>
 
     </div>
     );
