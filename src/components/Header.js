@@ -36,9 +36,6 @@ function Header() {
 
 
   <div className="header">
-   {/* <div class="mouse">
-    <span></span>
-   </div> */}
   </div>
 </div>
   );
