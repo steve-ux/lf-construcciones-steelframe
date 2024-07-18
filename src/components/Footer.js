@@ -42,7 +42,7 @@ function Footer() {
       <hr></hr>
       <footer>
           Copyright ©{" "}
-          {new Date().getFullYear()} <span>[ <a href="https://pixelpeak.ar" target="_blank" rel="noopener noreferrer" className="linkPixel">PixelPeak</a> ]</span> Diseño y Programación | Mendoza - Argentina{" "}    
+          {new Date().getFullYear()} <span><a href="https://ekoddex.com/" target="_blank" rel="noopener noreferrer" className="linkPixel">eKoddex |</a></span> Diseño y Programación | Mendoza - Argentina{" "}    
   </footer>
     </div>
     );
