@@ -21,7 +21,7 @@ function Footer() {
       </div>
       <div className="footer-menu3">
       <h4>UBICACIÓN</h4>
-      <p><a>ALBERDI, CÓRDOBA. ARGENTINA.</a></p>
+      <p><a href="https://maps.app.goo.gl/HSdKYG66pg57bhUs9" target="_blank" rel="noopener noreferrer">B° DOCTA, MZ95 - LOTE 2. CÓRDOBA, ARGENTINA.</a></p>
       <p><a href="tel:3513028154" target="_blank" rel="noopener noreferrer">CONSULTAR MÁS UBICACIONES.</a></p>
       <p><a href="mailto:luisfabianovalderrama09@gmail.com" target="_blank" rel="noopener noreferrer">LUISFABIANOVALDERRAMA09@GMAIL.COM</a></p>
       </div> 
